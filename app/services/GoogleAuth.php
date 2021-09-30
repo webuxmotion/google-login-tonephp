@@ -14,7 +14,7 @@ class GoogleAuth {
         $client->setClientId($_ENV['GOOGLE_CLIENT_ID']);
         $client->setClientSecret($_ENV['GOOGLE_CLIENT_SECRET']);
         $client->setApplicationName('Duottone Application');
-        $client->setRedirectUri('http://localhost:40001/user/login');
+        $client->setRedirectUri(siteUrl() . 'user/login');
         $client->addScope('https://www.googleapis.com/auth/plus.login https://www.googleapis.com/auth/userinfo.email');
 
         self::$google_login_url = $client->createAuthUrl();
