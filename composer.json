@@ -1,0 +1,7 @@
+{
+    "name": "tonephp/starter-kit",
+    "require": {
+        "tonephp/tonephp": "^0.1.10",
+        "google/apiclient": "^2.11"
+    }
+}
